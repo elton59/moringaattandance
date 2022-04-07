@@ -7,7 +7,7 @@ import axios from 'axios';
 function Services() {
   const [reso, setReso] = useState('');
 
-  const url="http://localhost:4000/api/findStudent"
+  const url="https://moringaattandance.herokuapp.com/api/findStudent"
 const [data,setData]=useState(
   {
     rno:"",

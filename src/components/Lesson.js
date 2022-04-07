@@ -6,7 +6,7 @@ import axios from 'axios';
 function Appointment(props) {
 
 
-const url="http://localhost:4000/api/registerLesson"
+const url="https://moringaattandance.herokuapp.com/api/registerLesson"
 const [data,setData]=useState(
   {
     fname:"",
