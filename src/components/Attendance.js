@@ -64,7 +64,7 @@ function handle(e)
         </div>
        <div className='formgroup'>
       <label>Date</label><br/>
-      <input type="text"   placeholder='ldate' name="ldate"  value={data.lid} onChange={(e)=>handle(e)} required/>
+      <input type="date"   placeholder='ldate' name="ldate"  value={data.lid} onChange={(e)=>handle(e)} required/>
       </div>
       
    
@@ -84,12 +84,12 @@ function handle(e)
                  <div className='servicecardtext'>
                      <p>
                    <ul>
-                  
+                   <li>ID :&nbsp;{reso.id}</li><br/>
                    <li>Firstname :&nbsp;{reso.registrationnumber}</li><br/>
-                   <li>Lastname:&nbsp;{reso.studentlastname} </li><br/><br/>
+                   <li>Lastname:&nbsp;{reso.studentlastname} </li><br/>
                    <li>LessonKey:&nbsp;{reso.lessonkey}</li><br/>
                    <li>LessonID:&nbsp;{reso.lessonid}</li><br/>
-                   <li>Registration NUmber:&nbsp; {reso.registrationnumber}</li>
+                   <li>Registration NUmber:&nbsp; {reso.registrationnumber}</li><br/>
                    <li>Chekin Date:&nbsp;{reso.checkintime}</li>
 </ul>
 </p>

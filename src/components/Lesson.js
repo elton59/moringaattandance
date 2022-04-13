@@ -9,6 +9,7 @@ function Appointment(props) {
 const url="https://moringaattandance.herokuapp.com/api/registerLesson"
 const [data,setData]=useState(
   {
+    lid:"",
     fname:"",
     ldate:"",
     rno:"",
@@ -20,7 +21,7 @@ function submit(e)
 {
   e.preventDefault();
   axios.post(url,{
-    
+    lessonid:data.lid,
     studentfirstname:data.fname,
     studentlastname:data.lname,
     registrationnumber:data.rno
@@ -52,7 +53,7 @@ function handle(e)
   <form onSubmit={(e)=>submit(e)}>
        <div className='formgroup'>
       <label>lesson ID</label><br/>
-      <input type="text"   placeholder='Lesson ID' name="lid"  value={data.lid} onChange={(e)=>handle(e)} required/>
+      <input type="text"   placeholder='Lesson ID' name="lid"  id='lid' value={data.lid} onChange={(e)=>handle(e)}  />
       </div>
       
       <div className='formgroup'>
